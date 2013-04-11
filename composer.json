@@ -1,0 +1,35 @@
+{
+	"name":"menatwork/ZipArchiveCto",
+	"description":"A file archive, compressed with Zip",
+	"keywords":["compression", "files", "archive", "zip", "php", "contao"],
+	"type":"contao-library",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Andreas Isaak",
+			"email":"isaak@men-at-work.de",
+			"homepage":"http://www.men-at-work.de",
+			"role":"Project leader"
+		},
+		{
+			"name":"Stefan Heimes",
+			"email":"heimes@men-at-work.de",
+			"homepage":"http://www.men-at-work.de",
+			"role":"Developer"
+		}
+	],
+	"require":{
+		"php":">=5.3",
+		"contao":">=2.10"
+	},
+	"autoload":{
+		"classmap":["system/"]
+	},
+	"extra":{
+		"contao": {
+			"symlinks":{
+				"system/modules/ZipArchiveCto": "system/modules/ZipArchiveCto"
+			}
+		}
+	}
+}
