@@ -21,7 +21,8 @@
 	],
 	"require":{
 		"php":">=5.3",
-		"contao":">=2.10"
+		"contao/core":">=2.11,<4",
+		"contao-community-alliance/composer-installer":"*"
 	},
 	"autoload":{
 		"classmap":["system/"]
