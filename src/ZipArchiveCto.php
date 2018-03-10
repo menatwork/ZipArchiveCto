@@ -3,24 +3,26 @@
 /**
  * Contao Open Source CMS
  *
- * @copyright  MEN AT WORK 2013 
+ * @copyright  MEN AT WORK 2013
  * @package    ZipArchiveCto
- * @license    GNU/LGPL 
+ * @license    GNU/LGPL
  * @filesource
  */
+
+namespace MenAtWork\ZipArchiveContaoComponent;
 
 /**
  * A file archive, compressed with Zip.
  * @link http://php.net/manual/en/class.ziparchive.php
  */
-class ZipArchiveCto extends ZipArchive
+class ZipArchiveCto extends \ZipArchive
 {
 
     /**
      * (PHP 5 &gt;= 5.2.0, PECL zip &gt;= 1.1.0)<br/>
      * Get for an error id the fitting error message.
-     * @param int $intError 
-     * @return string 
+     * @param int $intError
+     * @return string
      */
     public function getErrorDescription($intError)
     {
@@ -103,7 +105,7 @@ class ZipArchiveCto extends ZipArchive
         }
     }
 
-    /**     
+    /**
      * (PHP 5 &gt;= 5.2.0, PECL zip &gt;= 1.1.0)<br/>
      * Open a ZIP file archive
      * @link http://php.net/manual/en/function.ziparchive-open.php
