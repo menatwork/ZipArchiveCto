@@ -2,7 +2,7 @@
 	"name":"menatwork/ziparchivecto",
 	"description":"A file archive, compressed with zip",
 	"keywords":["compression","files","archive","zip","php","contao"],
-	"type":"contao-component",
+	"type":"library",
 	"homepage":"http://www.men-at-work.de",
 	"license":"LGPL-3.0-or-later",
 	"authors":[
