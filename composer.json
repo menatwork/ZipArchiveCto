@@ -2,9 +2,9 @@
 	"name":"menatwork/ziparchivecto",
 	"description":"A file archive, compressed with zip",
 	"keywords":["compression","files","archive","zip","php","contao"],
-	"type":"contao-module",
+	"type":"library",
 	"homepage":"http://www.men-at-work.de",
-	"license":"LGPL-3.0+",
+	"license":"LGPL-3.0-or-later",
 	"authors":[
 		{
 			"name":"Andreas Isaak",
@@ -20,21 +20,17 @@
 		}
 	],
 	"require":{
-		"php":">=5.3",
-		"contao/core":">=2.11,<4",
-		"contao-community-alliance/composer-installer":"*"
+		"php":"^5.6 || ^7.0",
+		"contao/core-bundle":"^4.4"
 	},
 	"autoload":{
-		"classmap":["system/"]
+		"psr-4": {
+			"MenAtWork\\ZipArchiveContaoComponent\\": "src"
+		}
 	},
-	"replace":{
-		"contao-legacy/ziparchivecto":"*"
-	},
-	"extra":{
-		"contao":{
-			"sources":{
-				"system/modules/ZipArchiveCto":"system/modules/ZipArchiveCto"
-			}
+	"extra": {
+		"branch-alias": {
+			"dev-feature/contao4": "2.0.x-dev"
 		}
 	}
 }

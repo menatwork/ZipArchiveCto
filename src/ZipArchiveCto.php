@@ -1,26 +1,38 @@
 <?php
 
 /**
- * Contao Open Source CMS
+ * This file is part of menatwork/ziparchivecto.
  *
- * @copyright  MEN AT WORK 2013 
- * @package    ZipArchiveCto
- * @license    GNU/LGPL 
+ * (c) 2014-2018 MEN AT WORK.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * This project is provided in good faith and hope to be usable by anyone.
+ *
+ * @package    menatwork/ziparchivecto
+ * @author     Stefan Heimes <stefan_heimes@hotmail.com>
+ * @author     Andreas Isaak <andy.jared@googlemail.com>
+ * @author     David Maack <david.maack@arcor.de>
+ * @author     Sven Baumann <baumann.sv@gmail.com>
+ * @copyright  2014-2018 MEN AT WORK.
+ * @license    https://github.com/menatwork/syncCto/blob/master/LICENSE LGPL-3.0-or-later
  * @filesource
  */
+namespace MenAtWork\ZipArchiveContaoComponent;
 
 /**
  * A file archive, compressed with Zip.
  * @link http://php.net/manual/en/class.ziparchive.php
  */
-class ZipArchiveCto extends ZipArchive
+class ZipArchiveCto extends \ZipArchive
 {
 
     /**
      * (PHP 5 &gt;= 5.2.0, PECL zip &gt;= 1.1.0)<br/>
      * Get for an error id the fitting error message.
-     * @param int $intError 
-     * @return string 
+     * @param int $intError
+     * @return string
      */
     public function getErrorDescription($intError)
     {
@@ -103,7 +115,7 @@ class ZipArchiveCto extends ZipArchive
         }
     }
 
-    /**     
+    /**
      * (PHP 5 &gt;= 5.2.0, PECL zip &gt;= 1.1.0)<br/>
      * Open a ZIP file archive
      * @link http://php.net/manual/en/function.ziparchive-open.php
